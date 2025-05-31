@@ -1,0 +1,88 @@
+{
+  "_comment": "LLaMA 3.1 LoRA Fine-tuning Configuration with GCS Dataset Support",
+  "_description": "This configuration demonstrates how to use datasets stored in Google Cloud Storage",
+  
+  "model_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "tokenizer_name": null,
+  "cache_dir": "./cache",
+  
+  "_lora_comment": "LoRA parameters optimized for LLaMA 3.1 architecture",
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.1,
+  "lora_target_modules": [
+    "q_proj", "k_proj", "v_proj", "o_proj", 
+    "gate_proj", "up_proj", "down_proj"
+  ],
+  "lora_bias": "none",
+  
+  "_training_comment": "Training parameters optimized for 8B model with 4-bit quantization",
+  "output_dir": "./results",
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 2,
+  "per_device_eval_batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 2e-4,
+  "weight_decay": 0.01,
+  "warmup_steps": 100,
+  "max_grad_norm": 1.0,
+  "save_steps": 500,
+  "eval_steps": 500,
+  "logging_steps": 100,
+  "max_length": 512,
+  
+  "_vertex_ai_comment": "Google Cloud Vertex AI configuration",
+  "project_id": "your-gcp-project-id",
+  "location": "us-central1",
+  "staging_bucket": "gs://your-model-storage-bucket",
+  
+  "_gcs_dataset_comment": "GCS Dataset Configuration - Use either bucket+prefix OR individual file paths",
+  "_option_1": "Bucket + Prefix approach (recommended)",
+  "gcs_dataset_bucket": "your-dataset-bucket",
+  "gcs_dataset_prefix": "datasets/llama3-experiments/",
+  
+  "_option_2": "Individual file paths (alternative to bucket+prefix)",
+  "train_file": null,
+  "validation_file": null,
+  
+  "_examples_comment": "Example GCS paths for reference",
+  "_example_train_file": "gs://my-datasets/experiments/exp001/train.json",
+  "_example_validation_file": "gs://my-datasets/experiments/exp001/validation.json",
+  "_example_bucket_structure": "gs://my-datasets/experiments/exp001/{train.json,validation.json}",
+  
+  "_fallback_comment": "Fallback options for dataset loading",
+  "dataset_name": "alpaca",
+  "dataset_path": null,
+  
+  "_quantization_comment": "4-bit quantization for memory efficiency",
+  "use_4bit": true,
+  "bnb_4bit_compute_dtype": "float16",
+  "bnb_4bit_quant_type": "nf4",
+  "use_nested_quant": false,
+  
+  "_monitoring_comment": "Experiment tracking and monitoring",
+  "use_wandb": true,
+  "wandb_project": "llama3-lora-finetuning",
+  
+  "_advanced_options_comment": "Advanced training options",
+  "gradient_checkpointing": true,
+  "fp16": true,
+  "dataloader_pin_memory": false,
+  "remove_unused_columns": false,
+  
+  "_flash_attention_comment": "Flash Attention 2 will be used automatically if available",
+  
+  "_usage_examples": {
+    "command_line_override": "python llama_lora_finetuning.py --gcs_dataset_bucket my-bucket --gcs_dataset_prefix experiments/run1/",
+    "individual_files": "python llama_lora_finetuning.py --train_file gs://bucket/train.json --validation_file gs://bucket/val.json",
+    "vertex_ai_deployment": "python vertex_ai_deployment.py --project_id PROJECT --staging_bucket gs://bucket --gcs_dataset_bucket my-datasets"
+  },
+  
+  "_gcs_best_practices": {
+    "bucket_naming": "Use descriptive bucket names like 'company-llama-datasets'",
+    "prefix_organization": "Organize with prefixes like 'experiments/YYYY-MM-DD-experiment-name/'",
+    "regional_buckets": "Create buckets in the same region as your Vertex AI training",
+    "versioning": "Enable versioning on your dataset buckets for reproducibility",
+    "access_control": "Use IAM to control access to dataset buckets"
+  }
+} 

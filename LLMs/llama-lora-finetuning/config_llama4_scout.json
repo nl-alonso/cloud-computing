@@ -1,0 +1,77 @@
+{
+  "_comment": "LLaMA 4 Scout LoRA Fine-tuning Configuration",
+  "_description": "Configuration for fine-tuning locally downloaded LLaMA 4 Scout models",
+  
+  "_model_comment": "Local LLaMA 4 Scout model configuration",
+  "model_name": "llama-4-scout-local",
+  "tokenizer_name": null,
+  "cache_dir": "./cache",
+  "local_model_path": null,
+  "use_local_model": true,
+  
+  "_auto_detection_note": "Set use_local_model=true to auto-detect downloaded models, or specify local_model_path",
+  "_example_local_path": "/home/user/.llama/llama-4-scout",
+  
+  "_lora_comment": "LoRA parameters optimized for LLaMA 4 Scout",
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.1,
+  "lora_target_modules": [
+    "q_proj", "k_proj", "v_proj", "o_proj", 
+    "gate_proj", "up_proj", "down_proj"
+  ],
+  "lora_bias": "none",
+  
+  "_training_comment": "Training parameters for LLaMA 4 Scout",
+  "output_dir": "./results_llama4_scout",
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 2,
+  "per_device_eval_batch_size": 2,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 2e-4,
+  "weight_decay": 0.01,
+  "warmup_steps": 100,
+  "max_grad_norm": 1.0,
+  "save_steps": 500,
+  "eval_steps": 500,
+  "logging_steps": 100,
+  "max_length": 512,
+  
+  "_vertex_ai_comment": "Google Cloud Vertex AI configuration",
+  "project_id": "your-gcp-project-id",
+  "location": "us-central1",
+  "staging_bucket": "gs://your-model-storage-bucket",
+  
+  "_gcs_dataset_comment": "GCS Dataset Configuration",
+  "gcs_dataset_bucket": "your-dataset-bucket",
+  "gcs_dataset_prefix": "datasets/llama4-scout/",
+  
+  "_fallback_comment": "Fallback options",
+  "dataset_name": "alpaca",
+  "dataset_path": null,
+  "train_file": null,
+  "validation_file": null,
+  
+  "_quantization_comment": "4-bit quantization for memory efficiency",
+  "use_4bit": true,
+  "bnb_4bit_compute_dtype": "float16",
+  "bnb_4bit_quant_type": "nf4",
+  "use_nested_quant": false,
+  
+  "_monitoring_comment": "Experiment tracking",
+  "use_wandb": true,
+  "wandb_project": "llama4-scout-lora-finetuning",
+  
+  "_usage_examples": {
+    "_download_first": "python download_llama4_scout.py --download llama-4-scout",
+    "_train_with_config": "python llama_lora_finetuning.py --config config_llama4_scout.json --project_id YOUR_PROJECT",
+    "_train_with_path": "python llama_lora_finetuning.py --local_model_path /path/to/model --project_id YOUR_PROJECT",
+    "_train_with_gcs": "python llama_lora_finetuning.py --use_local_model --gcs_dataset_bucket my-datasets --project_id YOUR_PROJECT"
+  },
+  
+  "_prerequisites": {
+    "llama_stack": "pip install llama-stack",
+    "download_model": "python download_llama4_scout.py --download MODEL_ID",
+    "custom_url": "You'll need your custom download URL when downloading"
+  }
+} 

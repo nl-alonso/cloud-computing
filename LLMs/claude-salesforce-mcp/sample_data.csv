@@ -1,0 +1,51 @@
+Name,Industry,Type,AnnualRevenue,NumberOfEmployees,Phone,BillingCity
+TechCorp Solutions,Technology,Customer,2500000,150,(555) 123-4567,San Francisco
+Global Dynamics,Manufacturing,Partner,5000000,500,(555) 234-5678,Chicago
+Future Systems,Healthcare,Customer,1800000,120,(555) 345-6789,Boston
+Digital Edge,Technology,Prospect,3200000,200,(555) 456-7890,Austin
+Smart Analytics,Financial Services,Customer,4100000,300,(555) 567-8901,New York
+Cloud Nine Tech,Technology,Customer,2800000,180,(555) 678-9012,Seattle
+Data Driven Inc,Technology,Partner,3500000,250,(555) 789-0123,Denver
+AI Innovations,Technology,Customer,4500000,320,(555) 890-1234,San Francisco
+Quantum Computing Co,Technology,Prospect,6000000,450,(555) 901-2345,Boston
+Cyber Security Pro,Technology,Customer,3800000,280,(555) 012-3456,Austin
+Mobile First Labs,Technology,Customer,2200000,140,(555) 123-5678,Seattle
+IoT Solutions,Technology,Partner,3600000,260,(555) 234-6789,Chicago
+Blockchain Ventures,Financial Services,Customer,5200000,380,(555) 345-7890,New York
+Machine Learning Corp,Technology,Customer,4800000,350,(555) 456-8901,San Francisco
+Virtual Reality Co,Technology,Prospect,2900000,190,(555) 567-9012,Denver
+Augmented Systems,Technology,Customer,3300000,210,(555) 678-0123,Austin
+Big Data Analytics,Technology,Customer,4200000,300,(555) 789-1234,Boston
+Cloud Computing Inc,Technology,Partner,3900000,290,(555) 890-2345,Seattle
+Software Engineering Ltd,Technology,Customer,2600000,160,(555) 901-3456,Chicago
+Web Development Co,Technology,Customer,1900000,130,(555) 012-4567,Denver
+Enterprise Solutions,Technology,Customer,5500000,400,(555) 123-6789,New York
+Business Intelligence,Technology,Partner,3700000,270,(555) 234-7890,San Francisco
+Data Warehousing,Technology,Customer,4000000,310,(555) 345-8901,Boston
+Network Security,Technology,Customer,3400000,220,(555) 456-9012,Austin
+Information Systems,Healthcare,Customer,2300000,150,(555) 567-0123,Seattle
+Technology Partners,Technology,Partner,4600000,340,(555) 678-1234,Chicago
+Digital Transformation,Technology,Customer,3100000,200,(555) 789-2345,Denver
+Innovation Hub,Technology,Prospect,2700000,170,(555) 890-3456,New York
+Strategic Tech,Technology,Customer,4300000,320,(555) 901-4567,San Francisco
+Advanced Computing,Technology,Customer,3800000,280,(555) 012-5678,Boston
+Modern Solutions,Technology,Partner,2400000,140,(555) 123-7890,Austin
+Tech Innovations,Technology,Customer,3600000,260,(555) 234-8901,Seattle
+Digital Solutions,Technology,Customer,4100000,300,(555) 345-9012,Chicago
+Smart Technology,Manufacturing,Customer,2800000,180,(555) 456-0123,Denver
+Future Computing,Technology,Customer,5000000,370,(555) 567-1234,New York
+Intelligent Systems,Technology,Prospect,3200000,210,(555) 678-2345,San Francisco
+Automated Solutions,Manufacturing,Customer,2900000,190,(555) 789-3456,Boston
+Connected Devices,Technology,Customer,3500000,250,(555) 890-4567,Austin
+Platform Solutions,Technology,Partner,4200000,310,(555) 901-5678,Seattle
+Enterprise Tech,Technology,Customer,3900000,290,(555) 012-6789,Chicago
+Digital Platform,Technology,Customer,2600000,160,(555) 123-8901,Denver
+Cloud Services,Technology,Customer,4700000,350,(555) 234-9012,New York
+Data Solutions,Technology,Customer,3300000,220,(555) 345-0123,San Francisco
+Innovation Labs,Healthcare,Customer,2100000,130,(555) 456-1234,Boston
+Technology Group,Technology,Partner,4400000,330,(555) 567-2345,Austin
+Digital Ventures,Financial Services,Customer,3700000,270,(555) 678-3456,Seattle
+Smart Systems,Technology,Customer,2500000,150,(555) 789-4567,Chicago
+Future Technologies,Technology,Customer,4000000,300,(555) 890-5678,Denver
+Advanced Analytics,Technology,Prospect,3400000,230,(555) 901-6789,New York
+Intelligent Computing,Technology,Customer,2800000,180,(555) 012-7890,San Francisco 

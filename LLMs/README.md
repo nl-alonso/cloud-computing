@@ -24,6 +24,27 @@ A comprehensive solution for fine-tuning LLaMA 3.1 and LLaMA 4 Scout models usin
 - Production deployment on Google Cloud infrastructure
 - Educational purposes for understanding LoRA fine-tuning
 
+### [Claude-Salesforce MCP Voice Assistant](./claude-salesforce-mcp/)
+
+A powerful voice-powered web application that integrates Claude AI with Salesforce CRM using natural language processing to query Salesforce data through voice commands.
+
+**Key Features:**
+- Voice-to-SOQL conversion using Claude AI for natural language understanding
+- Real-time Salesforce OAuth 2.0 authentication and session management
+- Multi-object support (Accounts, Opportunities, Contacts, Leads)
+- Browser-based voice recognition with modern web interface
+- Automated test data generation and CSV import templates
+- Enterprise-grade security with environment-based credential management
+
+**Technologies:** Claude 3.5 Sonnet (Anthropic), Salesforce REST API, Flask, Web Speech API, OAuth 2.0
+
+**Use Cases:**
+- Sales team productivity enhancement through voice-driven CRM queries
+- Executive dashboards with natural language data access
+- CRM training and demonstration with realistic sample data
+- Integration prototype for voice-enabled business applications
+
+[→ Go to Project](./claude-salesforce-mcp/)
 [→ Go to Project](./llama-lora-finetuning/)
 
 ## Coming Soon

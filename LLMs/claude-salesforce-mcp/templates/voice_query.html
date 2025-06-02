@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}Voice Query - Salesforce Voice Query{% endblock %}
+
+{% block content %}
+<div class="voice-query-container">
+    <!-- Voice Input Section -->
+    <div class="voice-input-section">
+        <div class="voice-controls">
+            <button id="voiceBtn" class="voice-btn" title="Click to start voice recognition">
+                <i class="fas fa-microphone"></i>
+                <span class="voice-status">Click to Speak</span>
+            </button>
+            
+            <div class="voice-feedback">
+                <div id="listening-indicator" class="listening-indicator">
+                    <div class="pulse"></div>
+                    <div class="pulse"></div>
+                    <div class="pulse"></div>
+                </div>
+                <p id="voice-text" class="voice-text">Your voice query will appear here...</p>
+            </div>
+        </div>
+
+        <!-- Manual Query Input -->
+        <div class="manual-input">
+            <div class="input-group">
+                <input type="text" id="manualQuery" placeholder="Or type your query here..." class="form-control">
+                <button id="manualSubmit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Query
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Query Processing Section -->
+    <div class="processing-section" id="processingSection" style="display: none;">
+        <div class="processing-card">
+            <div class="loading-spinner"></div>
+            <h3>Processing Your Query...</h3>
+            <div class="processing-steps">
+                <div class="step" id="step-convert">
+                    <i class="fas fa-brain"></i>
+                    <span>Converting to SOQL...</span>
+                </div>
+                <div class="step" id="step-execute">
+                    <i class="fas fa-database"></i>
+                    <span>Executing against Salesforce...</span>
+                </div>
+                <div class="step" id="step-format">
+                    <i class="fas fa-table"></i>
+                    <span>Formatting results...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results-section" id="resultsSection" style="display: none;">
+        <div class="results-header">
+            <h3>Query Results</h3>
+            <div class="query-info">
+                <div class="query-details">
+                    <strong>Natural Query:</strong> <span id="naturalQuery"></span><br>
+                    <strong>Generated SOQL:</strong> <code id="generatedSOQL"></code><br>
+                    <strong>Records Found:</strong> <span id="recordCount"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-table-container">
+            <table id="resultsTable" class="results-table">
+                <thead id="resultsTableHead"></thead>
+                <tbody id="resultsTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Error Section -->
+    <div class="error-section" id="errorSection" style="display: none;">
+        <div class="error-card">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Query Error</h3>
+            <p id="errorMessage"></p>
+            <div class="error-details" id="errorDetails" style="display: none;">
+                <strong>Technical Details:</strong>
+                <pre id="errorDetailsContent"></pre>
+            </div>
+            <button id="retryBtn" class="btn btn-primary">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Example Queries -->
+    <div class="examples-section">
+        <h3>Example Queries</h3>
+        <div class="examples-grid">
+            <div class="example-card" data-query="Show me all opportunities">
+                <i class="fas fa-handshake"></i>
+                <h4>All Opportunities</h4>
+                <p>"Show me all opportunities"</p>
+            </div>
+            <div class="example-card" data-query="Find accounts in technology industry">
+                <i class="fas fa-building"></i>
+                <h4>Tech Accounts</h4>
+                <p>"Find accounts in technology industry"</p>
+            </div>
+            <div class="example-card" data-query="Show contacts with email addresses">
+                <i class="fas fa-users"></i>
+                <h4>Contacts with Emails</h4>
+                <p>"Show contacts with email addresses"</p>
+            </div>
+            <div class="example-card" data-query="Find opportunities over 100000 dollars">
+                <i class="fas fa-dollar-sign"></i>
+                <h4>Large Opportunities</h4>
+                <p>"Find opportunities over $100,000"</p>
+            </div>
+            <div class="example-card" data-query="Show me all leads from this month">
+                <i class="fas fa-user-plus"></i>
+                <h4>Recent Leads</h4>
+                <p>"Show me all leads from this month"</p>
+            </div>
+            <div class="example-card" data-query="Find closed won opportunities">
+                <i class="fas fa-trophy"></i>
+                <h4>Won Deals</h4>
+                <p>"Find closed won opportunities"</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/voice-recognition.js') }}"></script>
+{% endblock %} 

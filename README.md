@@ -27,7 +27,6 @@ A comprehensive solution for fine-tuning LLaMA 3.1 and LLaMA 4 Scout models usin
 **Technologies:** Google Cloud Vertex AI, Hugging Face Transformers, PEFT, PyTorch, Google Cloud Storage
 
 [View Project →](./LLMs/llama-lora-finetuning/)
-
 ## Repository Structure
 
 ```

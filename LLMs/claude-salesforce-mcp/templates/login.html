@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Login - Salesforce Voice Query{% endblock %}
+
+{% block content %}
+<div class="login-container">
+    <div class="login-card">
+        <div class="logo-section">
+            <i class="fab fa-salesforce fa-4x"></i>
+            <h2>Connect to Salesforce</h2>
+            <p>Use your voice to query Salesforce data with natural language</p>
+        </div>
+
+        <div class="features-list">
+            <div class="feature">
+                <i class="fas fa-microphone-alt"></i>
+                <span>Voice Recognition</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-brain"></i>
+                <span>AI-Powered SOQL Generation</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-database"></i>
+                <span>Real-time Data Access</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <span>Secure OAuth Authentication</span>
+            </div>
+        </div>
+
+        <div class="login-actions">
+            <a href="{{ url_for('oauth_login') }}" class="btn btn-primary btn-large">
+                <i class="fab fa-salesforce"></i>
+                Login with Salesforce
+            </a>
+            
+            <div class="oauth-info">
+                <p><strong>OAuth Configuration Required:</strong></p>
+                <div class="config-status">
+                    <div class="config-item">
+                        <i class="fas {{ 'fa-check text-success' if salesforce_config.client_id else 'fa-times text-error' }}"></i>
+                        Client ID: {{ 'Configured' if salesforce_config.client_id else 'Missing' }}
+                    </div>
+                    <div class="config-item">
+                        <i class="fas {{ 'fa-check text-success' if salesforce_config.client_secret else 'fa-times text-error' }}"></i>
+                        Client Secret: {{ 'Configured' if salesforce_config.client_secret else 'Missing' }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if not salesforce_config.client_id or not salesforce_config.client_secret %}
+        <div class="setup-instructions">
+            <h3>Setup Instructions:</h3>
+            <ol>
+                <li>Create a Connected App in Salesforce Setup</li>
+                <li>Enable OAuth Settings with callback URL: <code>{{ salesforce_config.redirect_uri }}</code></li>
+                <li>Set environment variables:
+                    <pre><code>export SALESFORCE_CLIENT_ID="your_client_id"
+export SALESFORCE_CLIENT_SECRET="your_client_secret"</code></pre>
+                </li>
+                <li>Restart the application</li>
+            </ol>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %} 

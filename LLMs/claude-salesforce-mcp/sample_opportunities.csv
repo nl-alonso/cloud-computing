@@ -1,0 +1,52 @@
+Name,AccountName,StageName,Amount,CloseDate,Probability,Type
+TechCorp Solutions - Software License,TechCorp Solutions,Qualification,150000,2025-03-15,30,New Customer
+TechCorp Solutions - Consulting Services,TechCorp Solutions,Proposal/Price Quote,85000,2025-02-28,75,New Customer
+Global Dynamics - Implementation,Global Dynamics,Negotiation/Review,320000,2025-04-10,80,New Customer
+Future Systems - Support Contract,Future Systems,Closed Won,45000,2024-12-01,100,New Customer
+Digital Edge - Training,Digital Edge,Prospecting,25000,2025-05-20,20,New Customer
+Smart Analytics - Software License,Smart Analytics,Value Proposition,180000,2025-03-30,60,New Customer
+Cloud Nine Tech - Integration,Cloud Nine Tech,Proposal/Price Quote,95000,2025-02-15,70,Existing Customer - Upgrade
+Data Driven Inc - Custom Development,Data Driven Inc,Qualification,220000,2025-04-25,40,New Customer
+AI Innovations - Software License,AI Innovations,Closed Won,275000,2024-11-30,100,New Customer
+Quantum Computing Co - Consulting Services,Quantum Computing Co,Needs Analysis,450000,2025-06-15,50,New Customer
+Cyber Security Pro - Support Contract,Cyber Security Pro,Negotiation/Review,65000,2025-01-31,85,Existing Customer - Upgrade
+Mobile First Labs - Implementation,Mobile First Labs,Qualification,120000,2025-03-20,35,New Customer
+IoT Solutions - Software License,IoT Solutions,Value Proposition,195000,2025-04-05,65,New Customer
+Blockchain Ventures - Training,Blockchain Ventures,Prospecting,35000,2025-07-10,15,New Customer
+Machine Learning Corp - Custom Development,Machine Learning Corp,Proposal/Price Quote,380000,2025-05-05,75,New Customer
+Virtual Reality Co - Software License,Virtual Reality Co,Needs Analysis,165000,2025-03-25,45,New Customer
+Augmented Systems - Consulting Services,Augmented Systems,Closed Won,110000,2024-12-15,100,New Customer
+Big Data Analytics - Implementation,Big Data Analytics,Negotiation/Review,250000,2025-02-20,80,New Customer
+Cloud Computing Inc - Support Contract,Cloud Computing Inc,Qualification,55000,2025-04-30,30,Existing Customer - Upgrade
+Software Engineering Ltd - Software License,Software Engineering Ltd,Value Proposition,135000,2025-03-10,60,New Customer
+Web Development Co - Training,Web Development Co,Prospecting,18000,2025-06-25,10,New Customer
+Enterprise Solutions - Custom Development,Enterprise Solutions,Proposal/Price Quote,520000,2025-04-15,85,New Customer
+Business Intelligence - Software License,Business Intelligence,Needs Analysis,285000,2025-05-30,55,New Customer
+Data Warehousing - Implementation,Data Warehousing,Qualification,165000,2025-03-05,40,New Customer
+Network Security - Consulting Services,Network Security,Closed Won,95000,2024-11-25,100,New Customer
+Information Systems - Support Contract,Information Systems,Negotiation/Review,42000,2025-01-20,90,Existing Customer - Upgrade
+Technology Partners - Software License,Technology Partners,Value Proposition,315000,2025-04-20,70,New Customer
+Digital Transformation - Training,Digital Transformation,Prospecting,28000,2025-07-05,20,New Customer
+Innovation Hub - Custom Development,Innovation Hub,Proposal/Price Quote,185000,2025-03-12,65,New Customer
+Strategic Tech - Software License,Strategic Tech,Needs Analysis,225000,2025-05-10,50,New Customer
+Advanced Computing - Implementation,Advanced Computing,Qualification,140000,2025-02-25,35,New Customer
+Modern Solutions - Consulting Services,Modern Solutions,Closed Won,78000,2024-12-10,100,New Customer
+Tech Innovations - Software License,Tech Innovations,Negotiation/Review,265000,2025-04-08,85,New Customer
+Digital Solutions - Support Contract,Digital Solutions,Value Proposition,48000,2025-01-15,75,Existing Customer - Upgrade
+Smart Technology - Training,Smart Technology,Prospecting,22000,2025-06-30,15,New Customer
+Future Computing - Custom Development,Future Computing,Proposal/Price Quote,420000,2025-05-25,80,New Customer
+Intelligent Systems - Software License,Intelligent Systems,Needs Analysis,195000,2025-03-18,45,New Customer
+Automated Solutions - Implementation,Automated Solutions,Qualification,125000,2025-04-12,30,New Customer
+Connected Devices - Consulting Services,Connected Devices,Closed Won,88000,2024-11-20,100,New Customer
+Platform Solutions - Software License,Platform Solutions,Negotiation/Review,235000,2025-02-10,90,New Customer
+Enterprise Tech - Support Contract,Enterprise Tech,Value Proposition,52000,2025-01-25,70,Existing Customer - Upgrade
+Digital Platform - Training,Digital Platform,Prospecting,31000,2025-07-15,25,New Customer
+Cloud Services - Custom Development,Cloud Services,Proposal/Price Quote,365000,2025-05-15,75,New Customer
+Data Solutions - Software License,Data Solutions,Needs Analysis,175000,2025-03-22,40,New Customer
+Innovation Labs - Implementation,Innovation Labs,Qualification,115000,2025-04-18,35,New Customer
+Technology Group - Consulting Services,Technology Group,Closed Won,125000,2024-12-05,100,New Customer
+Digital Ventures - Software License,Digital Ventures,Negotiation/Review,295000,2025-04-02,85,New Customer
+Smart Systems - Support Contract,Smart Systems,Value Proposition,45000,2025-01-12,65,Existing Customer - Upgrade
+Future Technologies - Training,Future Technologies,Prospecting,26000,2025-06-20,20,New Customer
+Advanced Analytics - Custom Development,Advanced Analytics,Proposal/Price Quote,285000,2025-05-08,70,New Customer
+Intelligent Computing - Software License,Intelligent Computing,Needs Analysis,155000,2025-03-28,50,New Customer 

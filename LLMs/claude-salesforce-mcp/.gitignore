@@ -1,0 +1,10 @@
+*.env
+__pycache__/
+*.pyc
+instance/
+.DS_Store
+# Video files
+*.mov
+*.mp4
+*.avi
+sfdcdemo10 (1440p).mp4

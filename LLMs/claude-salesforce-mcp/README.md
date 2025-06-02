@@ -4,14 +4,8 @@ A powerful voice-powered web application that integrates **Claude AI** with **Sa
 
 ## Demo
 
-<video width="100%" autoplay loop muted>
-  <source src="sfdcdemo10 (1440p).mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+_Video demo: Upload the sfdcdemo10 (1440p).mp4 file by dragging it into this README on GitHub to embed the demo video_
 
-
-- **Voice Recognition**: Browser-based speech recognition for natural language input
-- **AI-Powered SOQL**: Claude AI converts natural language to proper SOQL queries
 - **Salesforce Integration**: Full OAuth 2.0 authentication with Salesforce APIs
 - **Real-time Results**: Instant query execution with formatted data display
 - **Secure Architecture**: No hardcoded credentials, environment-based configuration

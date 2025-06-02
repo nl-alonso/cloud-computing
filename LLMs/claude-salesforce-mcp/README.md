@@ -33,7 +33,7 @@ https://github.com/user-attachments/assets/f92a2ab3-f5db-476e-bc07-351a7b3bb308
 ## Technologies
 
 - **Backend**: Flask (Python)
-- **AI**: Claude 3.5 Sonnet (Anthropic)
+- **AI**: Claude 4 Sonnet (Anthropic)
 - **CRM**: Salesforce REST API v59.0
 - **Frontend**: HTML5, JavaScript, Web Speech API
 - **Authentication**: OAuth 2.0

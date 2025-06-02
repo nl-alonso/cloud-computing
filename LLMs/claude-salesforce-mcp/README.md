@@ -4,7 +4,9 @@ A powerful voice-powered web application that integrates **Claude AI** with **Sa
 
 ## Demo
 
-_Video demo: Upload the sfdcdemo10 (1440p).mp4 file by dragging it into this README on GitHub to embed the demo video_
+_Video demo: Upload 
+
+https://github.com/user-attachments/assets/a7279d8a-b2c4-481c-b447-7f96230da68d
 
 - **Salesforce Integration**: Full OAuth 2.0 authentication with Salesforce APIs
 - **Real-time Results**: Instant query execution with formatted data display

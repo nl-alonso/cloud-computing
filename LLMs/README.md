@@ -4,7 +4,7 @@ This directory contains projects related to Large Language Models, including fin
 
 ## Projects
 
-### [LLaMA LoRA Fine-tuning on Vertex AI](./llama-lora-finetuning/)
+### [Fine-Tuning Llama 4 using Low-Rank Adaptation on Vertex AI](./llama-lora-finetuning/)
 
 A comprehensive solution for fine-tuning LLaMA 3.1 and LLaMA 4 Scout models using Low Rank Adaptation (LoRA) on Google Cloud Vertex AI platform.
 
@@ -46,16 +46,6 @@ A powerful voice-powered web application that integrates Claude AI with Salesfor
 
 [→ Go to Project](./claude-salesforce-mcp/)
 [→ Go to Project](./llama-lora-finetuning/)
-
-## Coming Soon
-
-Future projects planned for this directory:
-
-- **GPT Fine-tuning Examples** - OpenAI API fine-tuning workflows
-- **Model Serving Solutions** - Scalable inference deployments
-- **LLM Evaluation Frameworks** - Automated testing and benchmarking
-- **Multi-Cloud Deployments** - AWS, Azure, and GCP comparisons
-- **LLM Security & Safety** - Content filtering and safety implementations
 
 ## Quick Start
 

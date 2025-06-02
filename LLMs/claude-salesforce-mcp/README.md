@@ -6,7 +6,7 @@ A powerful voice-powered web application that integrates **Claude AI** with **Sa
 
 _Video demo: Upload 
 
-https://github.com/user-attachments/assets/1c4acb7a-725f-40f9-a63d-484cd2b037ca
+https://github.com/user-attachments/assets/5734ef28-5d27-40bb-a21c-3e221593eeca
 
 - **Salesforce Integration**: Full OAuth 2.0 authentication with Salesforce APIs
 - **Real-time Results**: Instant query execution with formatted data display
